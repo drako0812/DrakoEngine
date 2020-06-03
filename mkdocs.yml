@@ -1,0 +1,9 @@
+site_name: Drako Engine Documentation
+nav:
+  - Home: 'README.md'
+  - Tutorials:
+    - 'tutorials/index.md'
+  - API:
+    - 'DrakoEngine/index.md'
+  - 'about.md'
+theme: readthedocs
