@@ -1,3 +1,7 @@
+=====================
+namespace DrakoEngine
+=====================
+
 .. cpp:function:: int DrakoEngine::add(int a, int b)
 
    Adds two integers together returning the result.
