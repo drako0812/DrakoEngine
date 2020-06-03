@@ -1,5 +1,7 @@
 # Drako Engine
 
+[![Documentation Status](https://readthedocs.org/projects/drakoengine/badge/?version=latest)](https://drakoengine.readthedocs.io/en/latest/?badge=latest)
+
 A modern C++ game engine using a high-performance Entity-Component-System
 architecture. Also, *Drako Engine* should be considered a programmer-first engine,
 not to say that designer and artist features won't be added, they are just a secondary
@@ -8,7 +10,7 @@ is for lone developers like myself.
 
 ## Documentation
 
-The documentation is hosted [HERE](https://readthedocs.org/DrakoEngine)
+The documentation is hosted [HERE](https://drakoengine.rtfd.io)
 
 ## License
 
