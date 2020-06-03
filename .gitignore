@@ -384,3 +384,7 @@ MigrationBackup/
 
 # Ignore Documentation build directory
 site/
+docs-sphinx/_build/
+
+# Ignore Visual Studio Code stuff
+.vscode/
