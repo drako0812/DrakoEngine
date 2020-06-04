@@ -156,6 +156,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="add.hpp" />
+    <ClInclude Include="app.hpp" />
+    <ClInclude Include="config.hpp" />
+    <ClInclude Include="DrakoEngine.hpp" />
     <ClInclude Include="exported.hpp" />
     <ClInclude Include="del_pch.hpp" />
   </ItemGroup>
@@ -172,6 +175,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="DrakoEngine.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -24,12 +24,24 @@
     <ClInclude Include="del_pch.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="app.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrakoEngine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="add.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="del_pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DrakoEngine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -31,6 +31,8 @@ release = '0.1.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'breathe',
+    'exhale'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -55,3 +57,25 @@ html_theme = 'default'
 html_static_path = ['_static']
 
 master_doc = 'index'
+
+breathe_projects = {
+    "Drako Engine": "./doxyoutput/xml"
+}
+breathe_default_project = "Drako Engine"
+
+exhale_args = {
+    # Required arguments
+    "containmentFolder":    "./api",
+    "rootFileName":         "library_root.rst",
+    "rootFileTitle":        "Drako Engine API",
+    "doxygenStripFromPath": "..",
+
+    # Suggested optional arguments
+    "createTreeView":       True,
+    "exhaleExecuteDoxygen": True,
+    "exhaleDoxygenStdin":   "INPUT = ../DrakoEngineLib"
+}
+
+primary_domain = 'cpp'
+
+highlight_language = 'cpp'

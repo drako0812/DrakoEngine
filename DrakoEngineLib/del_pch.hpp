@@ -1,27 +1,28 @@
 #pragma once
 
-#include <iostream>
+#define NOMINMAX
+
+#include <algorithm>
 #include <fstream>
-#include <sstream>
+#include <iostream>
+#include <map>
 #include <memory>
-#include <thread>
 #include <memory_resource>
 #include <random>
+#include <sstream>
 #include <string>
+#include <thread>
 #include <vector>
-#include <map>
-#include <algorithm>
 
-#include <cstdint>
 #include <cmath>
+#include <cstdint>
 
-#include <fmt/format.hpp>
-
+#include <cpptoml.h>
+#include <easylogging++.h>
+#include <effolkronium/random.hpp>
+#include <fmt/format.h>
+#include <rang.hpp>
+#include <SFML/Audio.hpp>
+#include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
-#include <SFML/Graphics.hpp>
-#include <SFML/Audio.hpp>
-
-#include <rang.hpp>
-
-// #include <cpptoml.hpp> or whatever it's called
