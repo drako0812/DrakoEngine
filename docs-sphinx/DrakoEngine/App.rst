@@ -2,69 +2,65 @@
 class DrakoEngine::App
 ======================
 
-.. cpp:namespace:: DrakoEngine
+.. cpp:class: DrakoEngine::App
+   
+   Entry point class of a Game/Application.
 
-   .. cpp:class: App
+   .. cpp:enum-class:: Result
+      
+      Signals Success or Failure of some functions.
    
-      Entry point class of a Game/Application.
+      .. cpp:enumeration:: Success
+      
+      .. cpp:enumeration:: Failure
 
-      .. cpp:enum-class:: Result
+   .. cpp:function:: virtual Result Startup()
       
-         Signals Success or Failure of some functions.
+      Runs before entering the game loop.
    
-         .. cpp:enumeration:: Success
+   .. cpp:function:: virtual Result Shutdown()
       
-         .. cpp:enumeration:: Failure
-
-      .. cpp:function:: virtual Result Startup()
-      
-         Runs before entering the game loop.
+      Runs after exiting the game loop.
    
-      .. cpp:function:: virtual Result Shutdown()
+   .. cpp:function:: virtual void HandleEvent(const sf::Event & event)
       
-         Runs after exiting the game loop.
+      Handles individual events.
    
-      .. cpp:function:: virtual void HandleEvent(const sf::Event & event)
+   .. cpp:function:: virtual void Update()
       
-         Handles individual events
+      Updates game or application state once per game loop.
    
-      .. cpp:function:: virtual void Update()
+   .. cpp:function:: virtual void Render()
       
-         Updates game or application state once per game loop.
+      Renders graphics to the screen.
    
-      .. cpp:function:: virtual void Render()
+   .. cpp:function:: Result Run(int argc, char * argv[])
       
-         Renders graphics to the screen.
-   
-      .. cpp:function:: Result Run(int argc, char * argv[])
-      
-         Starts the game loop using the following execution order::
+      Starts the game loop using the following execution order::
          
-         1. Startup()
-         2. Game Loop
+      1. Startup()
+      2. Game Loop
             
-            1. Update()
+         1. Update()
             
-               1. HandleEvent(event)
+            1. HandleEvent(event)
             
-            2. Render()
+         2. Render()
          
-         3. Shutdown()
+      3. Shutdown()
    
-      .. cpp:function:: virtual Result SoftReset()
+   .. cpp:function:: virtual Result SoftReset()
       
-         Resets the state of the game/application without destroying the window or unloading major engine components.
+      Resets the state of the game/application without destroying the window or unloading major engine components.
    
-      .. cpp:function:: virtual Result HardReset()
+   .. cpp:function:: virtual Result HardReset()
       
-         Resets the game similarly to closing the game and restarint it manually.
+      Resets the game similarly to closing the game and restarint it manually.
    
-      .. cpp:function:: virtual Result ClientRun()
+   .. cpp:function:: virtual Result ClientRun()
       
-         Executed client Run code like handling command-line arguments.
+      Executed client Run code like handling command-line arguments.
    
-      .. cpp:var:: vector<string> Arguments
+   .. cpp:var:: vector<string> Arguments
       
-         Holds the command-line arguments.
-
-.. cpp:namespace:: 0
+      Holds the command-line arguments.
