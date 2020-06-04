@@ -2,5 +2,7 @@ version: 2
 formats: all
 sphinx:
   builder: html
-#mkdocs:
-#  configuration: mkdocs.yml
+python:
+  version: 3.7
+  install:
+    - requirements: docs-sphinx/requirements.txt
