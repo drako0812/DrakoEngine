@@ -2,7 +2,7 @@
 class DrakoEngine::App
 ======================
 
-.. cpp:class: DrakoEngine::App
+.. cpp:class:: DrakoEngine::App
    
    Entry point class of a Game/Application.
 
