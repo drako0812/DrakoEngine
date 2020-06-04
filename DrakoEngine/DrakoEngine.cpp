@@ -1,8 +1,6 @@
 #include "pch.hpp"
-#include "add.hpp"
+#include "DrakoEngine.hpp"
 
-int main() {
-    std::cout << "Hello World!\n";
-    std::cout << "5 + 3 = " << DrakoEngine::add(5, 3) << std::endl;
-    return 0;
+int main(int argc, char * argv[]) {
+    return static_cast<int>(DrakoEngine::App{}.Run(argc, argv));
 }

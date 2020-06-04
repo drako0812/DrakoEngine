@@ -382,9 +382,11 @@ MigrationBackup/
 
 # End of https://www.toptal.com/developers/gitignore/api/c++,visualstudio
 
-# Ignore Documentation build directory
+# Ignore Documentation build directories
 site/
 docs-sphinx/_build/
+docs-sphinx/api/
+docs-sphinx/doxyoutput/
 
 # Ignore Visual Studio Code stuff
 .vscode/

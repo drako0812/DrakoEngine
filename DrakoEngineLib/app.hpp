@@ -1,7 +1,5 @@
 #pragma once
 
-#include "DrakoEngine.hpp"
-
 namespace sf {
     struct Event;
 }
@@ -9,14 +7,18 @@ namespace sf {
 namespace DrakoEngine {
 
     /// @brief Entry point class of a Game/Application
-    DRAKOENGINELIB_EXPORTED class App {
+    class DRAKOENGINELIB_EXPORTED App {
     public:
 
         /// @brief Signals success or failure of some functions.
         enum class Result {
+            Failure = 0, //!< Indicates some kind of failure.
             Success, //!< Indicates successful execution.
-            Failure, //!< Indicates some kind of failure.
         };
+
+        App();
+
+        virtual ~App();
 
         /// @brief Runs before entering the game loop.
         virtual Result Startup();
@@ -47,10 +49,10 @@ namespace DrakoEngine {
 
         /// @brief Resets the state of the game/application without destroying
         /// the window or unloading major engine components.
-        virtual Result SoftReset();
+        //virtual Result SoftReset();
 
         /// @brief Resets the game similarly to closing the game and restarting it manually.
-        virtual Result HardReset();
+        //virtual Result HardReset();
 
     protected:
 
@@ -61,6 +63,13 @@ namespace DrakoEngine {
 
         /// @brief Holds the command-line arguments.
         vec<str> Arguments;
+
+    protected:
+
+        sf::RenderWindow Window;
+        bool ShouldClose;
+        bool DoSoftReset;
+        bool DoHardReset;
     };
 
 }
