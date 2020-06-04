@@ -77,7 +77,7 @@ exhale_args = {
 
     # Suggested optional arguments
     "createTreeView":       True,
-    "exhaleExecuteDoxygen": True,
+    "exhaleExecutesDoxygen": True,
     "exhaleDoxygenStdin":   "INPUT = ../DrakoEngineLib"
 }
 
